@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>merch</title>
+    <link rel="icon" href="https://media.discordapp.net/attachments/1225322467829088257/1449949613292519484/Untitled9_20250713012234.png?ex=6946b10e&is=69455f8e&hm=af1d7cf77ec2416edfff46deff969d8fb935ac38d28bf59d954b1eeec78c10ee&=&format=webp&quality=lossless&width=1248&height=780" type="image/x-icon">
+    <style>
+      @font-face {
+  font-family: Cambria, Georgia, serif;
+}
+
+* {
+  font-family: Cambria, Georgia, serif;
+}
+
+body {
+ background-color: lightblue;
+}
+
+header {
+  margin-left: 50px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 412px;
+  background-color: white;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  user-select: none;
+  text-shadow: 2px 2px #000000;
+}
+
+h1.logo {
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px #000000;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.marquee-header {
+  height: 100px;
+  margin-left: 0px;
+  margin-right: -8.79px;
+  flex: 1;
+  background-color: rgb(255, 255, 255, 0.25);
+  color: white;
+  background-image: url("pictures/anisnow.gif");
+    padding: 10px 0;
+}
+
+#thestuff h2 {
+  text-shadow: 2px 2px white;
+  text-indent: 44px;
+}
+
+#thestuff p {
+  padding-left: 20px;
+}
+
+#thestuff {
+  margin-top: 30px;
+  padding: 20px;
+  width: 90%;
+  margin-left: 20px;
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.25);
+  background-image: url("pictures/anisnow.gif");
+color: black;
+}
+
+#main-title:hover {
+  color: deepskyblue;
+  cursor: pointer;
+}
+
+.marquee {
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+.marquee--inner {
+  display: block;
+  width: 200%;
+  position: absolute;
+  animation: marquee 4s linear infinite;
+}
+
+span {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.intro {
+  display: none;
+}
+
+.intro:target {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: deepskyblue;
+  cursor: pointer;
+}
+      
+.gallery { /* this is the main div that wraps your gallery */
+  display:flex;
+  flex-wrap:wrap;
+  width:100%; /* this can be modified to make the gallery wider */
+}
+
+.gallery img {
+  width:200px; /* this sets the width for every image */
+  height:200px; /* this sets the height for every image. Try setting it to 'auto' and see how it looks weird since every image has a slightly different height? */
+  object-fit:cover; /* this crops the image so they are all the same size. This might be an issue if you have landscape AND portrait images. Feel free to take this property out temporarily to see exactly what it does! */
+  
+}
+
+/* this is the div which CROPS every image */
+.gallery > div {
+  width:200px; /* this should match the image height */
+  height:200px; /* this should match the image width */
+  margin-right:10px; /* this controls the gaps between the images */
+  margin-bottom:10px; /* this controls the gaps between the images */
+}
+
+/* this resizes the image on hover. note that objects in 'portrait'  */
+.gallery img:hover {
+  transform:scale(2.5); /* this scales up the image when you hover over it */
+  object-fit:contain; /* this keeps the aspect ratio of the original images*/
+}
+.gallery .image-container:hover .default {
+  opacity: 0;*/
+}
+
+.gallery .image-container:hover .hover {
+  opacity: 1;
+}
+    </style>
+
+  <body>
+  <section class="header-container">
+    <header class="header">
+      <h1 class="logo"><i>interesting new people</i></h1>
+      <nav>
+        <a href="/">home</a> | <a href="/merch">merch</a> | <a href="https://interestingnewpeople.bandcamp.com/">bandcamp</a> | <a href="https://x.com/PhonkCrave">twitter</a> | <a href="/ai">interesting new ai</a>
+      </nav>
+    </header>
+    <section class="marquee-header">
+<div class="marquee">
+  <div class="marquee--inner">
+    <span>
+      <div> <img src="/pictures/people.png" width="200" height="150">
+            <img src="/pictures/people.png" width="200" height="150">
+            <img src="/pictures/people.png" width="200" height="150">
+            <img src="/pictures/people.png" width="200" height="150">
+            <img src="/pictures/people.png" width="200" height="150">
+      </div>
+    </span>
+    <span>
+      <div> <img src="/pictures/people.png" width="200" height="150">
+            <img src="/pictures/people.png" width="200" height="150">
+            <img src="/pictures/people.png" width="200" height="150">
+            <img src="/pictures/people.png" width="200" height="150">
+            <img src="/pictures/people.png" width="200" height="150">
+      </div>
+    </span>
+  </div>
+</div>
+    </section>
+  </section>
+  
+    <section id="thestuff">
+      <h2 id="main-title">welcome to the i.n.p site :)</h2>
+      
+      <div class="gallery">
+  <div>
+    <a href="https://interesting-new-people.teemill.com/product/interesting-new-people-also-people-shirt/"><img src="https://images.podos.io/70d3c0b5b2715a3dcdd0f2e62d0663e446d274629fcf92de.png" /></a>
+  </div>
+  <div>
+    <a href="https://interesting-new-people.teemill.com/product/interesting-new-people-dollar-new-people-shirt/"><img src="https://images.podos.io/36c2eee4295b80b69d751c90c91bb8ca9a37807cd58e911a.png" /></a>
+  </div>
+  <div>
+        <a href="https://interesting-new-people.teemill.com/product/interesting-new-people-people-shirt"/> <img src="https://images.podos.io/969d0fa7725dd5e7bd81d0301a141d329db094b3b9b21447.png" /></a>
+  </div>
+  <div>
+            <a href="https://interesting-new-people.teemill.com/product/interesting-new-people-phonk-explosion-shirt/"/> <img src="https://images.podos.io/6d1577e540d2c54457ffb7027b714b1500784583a591bd16.png" /></a>
+  </div>
+    <div>
+            <a href="https://interesting-new-people.teemill.com/product/interesting-new-people-free-advertisement-shirt/"/><img src="https://images.podos.io/46096ccf4a545c780c8fe0299a82b173379f670a818479e7.png" /></a>
+  </div>
+    <div>
+      <a href="https://interesting-new-people.teemill.com/product/logo/"><img src="https://images.podos.io/1a453237edee691647e892600b4bcf2b9749ea1dbc7de2cd.png" /></a>
+  </div>
+    <div>
+        <a href="https://interestingnewpeople.bandcamp.com/merch"><img src="pictures/vinyl.png" />
+</div></a>
+    <div>
+        <a href="https://interestingnewpeople.bandcamp.com/merch"><img src="pictures/cd.png" />
+</div></a>
+      </div>
+  </body>
+
+  <script>
+    const gradientPresets = [
+    {
+colors: ['#5BCEFA', '#F5A9B8', '#FFFFFF', '#F5A9B8', '#5BCEFA'],  // trans  
+    },
+    {
+colors: ['#F12900', '#FF9B55', '#FFFFFF', '#D461A6', '#A50062'],  // lesbian
+    },
+    {
+colors: ['#FCF434', '#FFFFFF', '#9C59D1', '#2C2C2C'],  // nonbinary 
+    },
+    {
+      colors: ['#5433ff, #20bdff, #a5fecb'], // blue cyan yellow
+    },
+    {
+      colors: ['#00416a, #b2edd8'],  // dark blue greenish 
+    }
+  ];
+  function getRandomGradient() {
+    const randomIndex = Math.floor(Math.random() * gradientPresets.length);
+    return gradientPresets[randomIndex];
+  }
+window.onload = function() {
+  const header = document.querySelector('.header');
+  const randomGradient = getRandomGradient();
+  
+  const gradientString = `linear-gradient(180deg, ${randomGradient.colors.join(', ')})`;
+  
+  header.style.background = gradientString;
+};
+
+  const texts = [
+    "welcome back, alfredo dollar",
+    "i am going to bingle you",
+    "my tummy hurts",
+    "one two three four five six berogep seven eight nine ten",
+    "you are an foid!",
+    "intelligent chinese character",
+    "support our lovely music!",
+    "classic strawberry",
+    "never feed the interesting new people after midnight",
+    "去你的圣诞老人",
+    "piranha",
+    "yours my friend",
+    "didy 💀💀💀💀",
+    "my auntie was RAPTURED!",
+    "trance girl is beautiful",
+    "the crab secret",
+    "one million cockroaches🪳🪳🪳🪳🪳🪳🪳🪳🪳🪳🪳🪳🪳🪳🪳🪳🪳🪳🪳🪳🪳🪳",
+    "Hiw do i hit him",
+    "i have a question about a seahorse but i can't ask it",
+    "please give us money",
+    "buy our shirts if you are richard"
+
+  ];
+
+  const h2 = document.getElementById("main-title");
+
+  h2.addEventListener("mouseenter", () => {
+    const randomText = texts[Math.floor(Math.random() * texts.length)];
+    h2.textContent = randomText;
+  });
+  </script>
